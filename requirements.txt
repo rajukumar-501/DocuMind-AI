@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-openai
+openai
+faiss-cpu
+PyPDF2
+python-dotenv
+python-multipart
+sentence-transformers
+pytest
+pytest-asyncio
+langchain-core
+langchain-text-splitters
+python-dotenv

@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    container_name: documind-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8501}
+    volumes:
+      - documind_data:/app/vector_store
+      - documind_metadata:/app/data
+    restart: unless-stopped
+
+volumes:
+  documind_data:
+  documind_metadata:
